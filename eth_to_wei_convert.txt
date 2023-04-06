@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract EtherReceiver {
+    uint256 public ethValue;
+    uint256 public weiValue;
+    uint256 public gweiValue;
+
+    function setEth(uint256 _var) public{
+        ethValue = _var;
+    }
+    function returnValue() public {
+        weiValue =  ethValue * 1e18;
+        gweiValue = ethValue * 1e9;
+
+    }
+
+}
