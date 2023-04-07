@@ -1,0 +1,18 @@
+pragma solidity ^0.8.17;
+ contract Loops{
+     function fun1() external pure returns (uint){
+         uint s;
+         for(uint i=1;i<=1000;i++){
+             s = s + 1;
+         }
+        return s;
+     }
+     function fun2() external pure returns (uint){
+         uint s;
+         for(uint i=1;i<=100;i++){
+             if(i%3==0)
+             s = s + 1;
+         }
+        return s;
+     }
+ }
